@@ -5,8 +5,8 @@ const App: React.FC = () => {
   const [count, setCount] = useState(0);
   const [apiMessage, setApiMessage] = useState<string>("Загрузка...");
 
-  const apiPath = getConfigValue("les.api") || "/api";
-  const mainNav = getNavigationValue("les.main") || "/les";
+  const apiPath = getConfigValue("Les.api") || getConfigValue("les.api") || "/api";
+  const mainNav = getNavigationValue("Les.main") || getNavigationValue("les.main") || "/les";
 
   useEffect(() => {
     fetch(`${apiPath}/hello`)

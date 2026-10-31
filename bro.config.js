@@ -9,11 +9,14 @@ module.exports = {
   },
   navigations: {
     "les.main": "/les",
+    "Les.main": "/les",
   },
   features: {
     "les": {},
+    "Les": {},
   },
   config: {
     "les.api": "/api",
+    "Les.api": "/api",
   },
 };
